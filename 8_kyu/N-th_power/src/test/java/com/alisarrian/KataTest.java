@@ -40,6 +40,12 @@ class KataTest {
         assertEquals(-1, nthPowerOf(array, 3));
     }
 
+    @Test
+    void shouldReturnMinus1WhenIndexIsGreaterThanArraySize() {
+        int[] array = {1, 3, 5};
+        assertEquals(-1, nthPowerOf(array, 5));
+    }
+
     private int nthPowerOf(int[] array, int index) {
         return Kata.nthPower(array, index);
     }
