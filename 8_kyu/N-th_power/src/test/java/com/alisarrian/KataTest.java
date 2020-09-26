@@ -11,6 +11,12 @@ class KataTest {
     }
 
     @Test
+    void shouldReturnMinus1WhenEmptyArray() {
+        int[] array = {};
+        assertEquals(-1, nthPowerOf(array, 0));
+    }
+
+    @Test
     void shouldReturnMinus1WhenNegativeIndex() {
         int[] array = {1};
         assertEquals(-1, nthPowerOf(array, -1));
