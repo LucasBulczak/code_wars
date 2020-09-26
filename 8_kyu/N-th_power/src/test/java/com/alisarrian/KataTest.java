@@ -22,6 +22,12 @@ class KataTest {
         assertEquals(1, nthPowerOf(array, 0));
     }
 
+    @Test
+    void shouldReturn25WhenIndexIsEqual0() {
+        int[] array = {5};
+        assertEquals(5 * 5, nthPowerOf(array, 0));
+    }
+
     private int nthPowerOf(int[] array, int index) {
         return Kata.nthPower(array, index);
     }
