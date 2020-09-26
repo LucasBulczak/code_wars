@@ -8,6 +8,6 @@ public class Kata {
         if (index < 0) {
             return -1;
         }
-        return 1;
+        return array[0] * array[0];
     }
 }
