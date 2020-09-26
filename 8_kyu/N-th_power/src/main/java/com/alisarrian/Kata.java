@@ -8,6 +8,6 @@ public class Kata {
         if (index < 0 || index >= array.length) {
             return -1;
         }
-        return array[index] * array[index];
+        return (int) Math.pow(array[index], 2);
     }
 }
