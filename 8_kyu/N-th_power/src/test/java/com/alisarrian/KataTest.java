@@ -7,11 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class KataTest {
     @Test
     void shouldReturnMinus1WhenNull() {
-        assertEquals(-1, Kata.nthPower(null, 1));
+        assertEquals(-1, nthPowerOf(null, 1));
     }
 
     @Test
     void shouldReturnMinus1WhenNegativeIndex() {
-        assertEquals(-1, Kata.nthPower(new int[]{1}, -1));
+        int[] array = {1};
+        assertEquals(-1, nthPowerOf(array, -1));
+    }
+
+    private int nthPowerOf(int[] array, int index) {
+        return Kata.nthPower(array, index);
     }
 }
