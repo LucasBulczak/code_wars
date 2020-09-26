@@ -28,6 +28,12 @@ class KataTest {
         assertEquals(5 * 5, nthPowerOf(array, 0));
     }
 
+    @Test
+    void shouldReturnThePowerOfTheValueAtTheSpecifiedIndex() {
+        int[] array = {1, 3, 5};
+        assertEquals(5 * 5, nthPowerOf(array, 2));
+    }
+
     private int nthPowerOf(int[] array, int index) {
         return Kata.nthPower(array, index);
     }
