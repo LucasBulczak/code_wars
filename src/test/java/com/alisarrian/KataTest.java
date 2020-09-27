@@ -25,20 +25,14 @@ class KataTest {
 
     @Test
     void shouldReturn1WhenIndexIsEqual0() {
-        int[] array = {1};
-        Assertions.assertEquals(1, nthPowerOf(array, 0));
-    }
-
-    @Test
-    void shouldReturn25WhenIndexIsEqual0() {
         int[] array = {5};
-        Assertions.assertEquals(5 * 5, nthPowerOf(array, 0));
+        Assertions.assertEquals(Math.pow(5, 0), nthPowerOf(array, 0));
     }
 
     @Test
     void shouldReturnThePowerOfTheValueAtTheSpecifiedIndex() {
         int[] array = {1, 3, 5};
-        Assertions.assertEquals(5 * 5, nthPowerOf(array, 2));
+        Assertions.assertEquals(Math.pow(5, 2), nthPowerOf(array, 2));
     }
 
     @Test
