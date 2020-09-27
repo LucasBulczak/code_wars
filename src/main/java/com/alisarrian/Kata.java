@@ -1,13 +1,17 @@
 package com.alisarrian;
 
+import java.util.stream.IntStream;
+
 public class Kata {
-    public static int nthPower(int[] array, int index) {
+    public static int nthPower(int[] array, int n) {
         if (array == null) {
             return -1;
         }
-        if (index < 0 || index >= array.length) {
-            return -1;
-        }
-        return (int) Math.pow(array[index], index);
+
+        return IntStream.range(0, array.length)
+                .filter(value -> value == n)
+                .map(operand -> (int) Math.pow(array[n], n))
+                .findFirst()
+                .orElse(-1);
     }
 }
