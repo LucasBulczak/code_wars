@@ -1,4 +1,4 @@
-package com.alisarrian;
+package com.alisarrian._8kyu;
 
 import java.util.stream.IntStream;
 

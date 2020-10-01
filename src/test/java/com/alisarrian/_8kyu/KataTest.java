@@ -1,9 +1,8 @@
-package com.alisarrian;
+package com.alisarrian._8kyu;
 
+import com.alisarrian._8kyu.Kata;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class KataTest {
     @Test
