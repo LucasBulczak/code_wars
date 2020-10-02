@@ -1,11 +1,10 @@
 package com.alisarrian._8kyu;
 
+import java.util.stream.IntStream;
+
 public class GrassHopper {
     public static int summation(int n) {
-        int sum = 0;
-        for (int i = 0; i <= n; i++) {
-            sum += i;
-        }
-        return sum;
+        return IntStream.rangeClosed(0, n)
+                .sum();
     }
 }
