@@ -23,9 +23,9 @@ class GrassHopperTest {
                 GrassHopper.summation(3));
     }
 
-//    @Test
-//    public void test2() {
-//        assertEquals(36,
-//                GrassHopper.summation(8));
-//    }
+    @Test
+    public void shouldReturn36WhenGiven8() {
+        assertEquals(36,
+                GrassHopper.summation(8));
+    }
 }
