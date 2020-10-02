@@ -11,6 +11,12 @@ class GrassHopperTest {
                 GrassHopper.summation(1));
     }
 
+    @Test
+    void shouldReturn3WhenGiven2() {
+        assertEquals(3,
+                GrassHopper.summation(2));
+    }
+
 //    @Test
 //    public void test2() {
 //        assertEquals(36,
