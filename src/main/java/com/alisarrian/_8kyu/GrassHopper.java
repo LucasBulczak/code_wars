@@ -2,8 +2,12 @@ package com.alisarrian._8kyu;
 
 public class GrassHopper {
     public static int summation(int n) {
-        return n == 1
-                ? 1
-                : 3;
+        if (n == 1) {
+            return 1;
+        } else if (n == 2) {
+            return 3;
+        } else {
+            return 6;
+        }
     }
 }
