@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class NthSeriesTest {
     @Test
     void shouldReturn1WhenGiven1() {
-        assertEquals("1", NthSeries.seriesSum(1));
+        assertEquals("1.00", NthSeries.seriesSum(1));
     }
 
 //    @Test
