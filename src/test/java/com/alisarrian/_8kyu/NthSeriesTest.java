@@ -15,6 +15,11 @@ class NthSeriesTest {
         assertEquals("1.25", NthSeries.seriesSum(2));
     }
 
+    @Test
+    void  shouldReturn1_39WhenGiven3() {
+        assertEquals("1.39", NthSeries.seriesSum(3));
+    }
+
 //    @Test
 //    public void test1() {
 //        assertEquals("1.57", NthSeries.seriesSum(5));
