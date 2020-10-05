@@ -2,16 +2,16 @@ package com.alisarrian._8kyu;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.stream.IntStream;
 
 public class NthSeries {
     public static String seriesSum(int n) {
         if (n == 1) {
             return "1.00";
         }
-        double sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum =  sum + 1.0 / (1.0 + i * 3);
-        }
+        double sum = IntStream.range(0, n)
+                .mapToDouble(i -> 1.0 / (1.0 + i * 3))
+                .sum();
         return format(sum);
     }
 
