@@ -1,5 +1,6 @@
-package com.alisarrian._8kyu;
+package com.alisarrian._7kyu;
 
+import com.alisarrian._7kyu.NthSeries;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

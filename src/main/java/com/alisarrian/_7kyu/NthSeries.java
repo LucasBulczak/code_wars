@@ -1,4 +1,4 @@
-package com.alisarrian._8kyu;
+package com.alisarrian._7kyu;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
